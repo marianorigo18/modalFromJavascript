@@ -56,7 +56,7 @@ function rederModal(){
     <div class="modal-content">
     <span class="btn-close">X</span>
     <div class="modal-content-img">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrbsyUiqBR1DDVM4-lU-Kmz1vSrEGoteHUW-fageuH&s" alt="">
+        <img src="https://www.blogdelfotografo.com/wp-content/uploads/2014/08/61.jpg" alt="">
     </div>
     <div class="modal-body">
         <button class="btn-close-two">close</button>
