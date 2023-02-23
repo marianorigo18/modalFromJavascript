@@ -1,5 +1,6 @@
-const boxContent = document.querySelector('.box-container');
 const main = document.querySelector('main');
+
+renderBoxes()
 
 function obtenerModalCalculator(){
     const containerModalCalculator = document.querySelector('.container-modal-calculator');
@@ -66,6 +67,29 @@ function rederModal(){
     `
     main.appendChild(cModal)
     obtenerModal()
+}
+
+function obtenerBoxes(){
+    const boxContainer = document.querySelector('.box-container')
+    boxContainer.addEventListener('click', (e)=>{
+        const cuadrado = e.target.classList.contains('cuadrado');
+        if(cuadrado){
+            rederModal()
+        }
+    })
+}
+
+function renderBoxes(){
+    const boxContainer = document.createElement('div');
+    boxContainer.classList = 'container box-container'
+    boxContainer.innerHTML = `
+    <div class="cuadrado"></div>
+    <div class="cuadrado"></div>
+    <div class="cuadrado"></div>
+    <div class="cuadrado"></div>
+    `
+    main.appendChild(boxContainer)
+    obtenerBoxes()
 }
 
 boxContent.addEventListener('click', (e)=> {
